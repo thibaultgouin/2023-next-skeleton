@@ -1,0 +1,24 @@
+// Fonts
+$baseFont: "Nunito Sans", Arial, sans-serif;
+
+// Z-index
+$zLayout: default, content;
+
+// Colors
+$colorWhite: #ffffff;
+$colorBlack: #000000;
+$colorDarkBlack: #0e0e0e;
+$colorLightBlack: #1a1a1a;
+
+// Breakpoints
+/* This has to follow the values in config/sizes.tsx */
+$mediaQueries: (
+  MAX_479: "(max-width: 479px)",
+  MIN_480: "(min-width: 480px)",
+  MIN_768: "(min-width: 768px)",
+  MIN_1024: "(min-width: 1024px)",
+  MIN_1200: "(min-width: 1200px)",
+  MIN_1440: "(min-width: 1440px)",
+  MIN_1600: "(min-width: 1600px)",
+  MIN_1920: "(min-width: 1920px)",
+);

@@ -1,0 +1,29 @@
+.A03Heading {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+
+  &.h1 {
+    font-size: 90px;
+  }
+
+  &.h2 {
+    font-size: 60px;
+  }
+
+  &.h3 {
+    font-size: 45px;
+  }
+
+  &.h4 {
+    font-size: 30px;
+  }
+
+  &.h5 {
+    font-size: 22px;
+  }
+
+  &.h6 {
+    font-size: 18px;
+  }
+}

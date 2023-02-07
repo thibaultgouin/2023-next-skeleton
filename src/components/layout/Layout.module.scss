@@ -1,0 +1,10 @@
+.Layout {
+  @include size(100%);
+  position: relative;
+
+  .main {
+    position: relative;
+    background: $colorDarkBlack;
+    height: calc(100vh - 160px); // temporary
+  }
+}
