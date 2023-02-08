@@ -28,7 +28,7 @@ const M02Button = ({
     return (
       <Link className={classNames(styles.M02Button, className)} href={href}>
         {iconAlignment === "start" && icon ? <A01Icon icon={icon} /> : null}
-        <A04Text tag="span" className={styles.label} text={label} />
+        <A04Text className={styles.label} tag="span" text={label} />
         {iconAlignment === "end" && icon ? <A01Icon icon={icon} /> : null}
       </Link>
     );
