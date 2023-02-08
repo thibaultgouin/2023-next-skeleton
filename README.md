@@ -7,9 +7,17 @@ Building my own Next.js skeleton to start new project
 First, run the development server:
 
 ```bash
+nvm use
 npm install
-# and
 npm run dev
+```
+
+## Storybook
+
+See all UI components and their variations in isolation
+
+```bash
+npm run storybook
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
