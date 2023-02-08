@@ -20,53 +20,7 @@
 /**
  * Fluid Fond function
  */
-@function strip-unit($number) {
-  @if type-of($number) == "number" and not unitless($number) {
-    @return $number / ($number * 0 + 1);
-  }
 
-  @return $number;
-}
-
-@function remify($value, $remify: true) {
-  @if $remify {
-    @return #{strip-unit($value) / 16}rem;
-  }
-  @return $value;
-}
-
-@function fluid(
-  $minValue,
-  $maxValue,
-  $minViewportWidth: $minVW,
-  $maxViewportWidth: $maxVW,
-  $remify: false,
-  $clamp: true
-) {
-  $additionalSize: #{strip-unit($minViewportWidth) / 100}px;
-  $minSize: remify($minValue, $remify);
-  $maxSize: remify($maxValue, $remify);
-  $calc: #{calc(
-      #{$minSize} + ((#{1vw} - #{$additionalSize}) * #{100 *
-            ($maxValue - $minValue) / ($maxViewportWidth - $minVW)})
-    )};
-  @if $clamp {
-    @return #{clamp($minSize, $calc, $maxSize)};
-  }
-  @return max(#{$minSize, $calc});
-}
-
-@function fluid-font(
-  $minValue,
-  $maxValue,
-  $minViewportWidth: $minVW,
-  $maxViewportWidth: $maxVW
-) {
-  @return fluid(
-    $minValue,
-    $maxValue,
-    $minViewportWidth: $minVW,
-    $maxViewportWidth: $maxVW,
-    $remify: true
-  );
+@function fluid-font-size($fontSize, $maxWidth: 1920) {
+  @return calc(($fontSize / $maxWidth) * 100vw);
 }

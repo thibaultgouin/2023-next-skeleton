@@ -1,8 +1,9 @@
 html {
   font-family: $baseFont;
-  box-sizing: border-box;
+  font-weight: $mediumWeight;
   color: $colorWhite;
   background: $colorDarkBlack;
+  box-sizing: border-box;
 }
 
 html,

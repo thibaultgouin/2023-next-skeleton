@@ -1,0 +1,15 @@
+.A04Text {
+  position: relative;
+
+  &.copy-1 {
+    @include t-copy-1;
+  }
+
+  &.copy-2 {
+    @include t-copy-2;
+  }
+
+  &.copy-3 {
+    @include t-copy-3;
+  }
+}

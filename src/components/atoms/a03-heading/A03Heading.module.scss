@@ -1,29 +1,28 @@
 .A03Heading {
   width: 100%;
   display: block;
-  object-fit: cover;
 
   &.h1 {
-    font-size: 90px;
+    @include heading-1;
   }
 
   &.h2 {
-    font-size: 60px;
+    @include heading-2;
   }
 
   &.h3 {
-    font-size: 45px;
+    @include heading-3;
   }
 
   &.h4 {
-    font-size: 30px;
+    @include heading-4;
   }
 
   &.h5 {
-    font-size: 22px;
+    @include heading-5;
   }
 
   &.h6 {
-    font-size: 18px;
+    @include heading-6;
   }
 }

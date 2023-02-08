@@ -1,6 +1,6 @@
 .A01Icon {
+  @include size(24px);
+
   position: relative;
   color: currentColor;
-  width: 24px;
-  height: 24px;
 }

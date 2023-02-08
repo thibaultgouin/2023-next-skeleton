@@ -1,0 +1,98 @@
+@mixin heading {
+  font-family: $baseFont;
+  font-size: 6rem;
+  line-height: (55/60);
+  font-weight: $boldWeight;
+  letter-spacing: -0.02em;
+}
+
+@mixin heading-1 {
+  @include heading;
+  text-transform: uppercase;
+
+  @include respond-to(MIN_1200) {
+    font-size: fluid-font-size(150); // 15rem
+    line-height: (130/150);
+  }
+
+  @include respond-to(MIN_1920) {
+    font-size: 15rem;
+  }
+}
+
+@mixin heading-2 {
+  @include heading;
+  text-transform: uppercase;
+
+  @include respond-to(MIN_1200) {
+    font-size: fluid-font-size(140); // 14rem
+    line-height: (130/140);
+  }
+
+  @include respond-to(MIN_1920) {
+    font-size: 14rem;
+  }
+}
+
+@mixin heading-3 {
+  @include heading;
+  text-transform: uppercase;
+
+  @include respond-to(MIN_1200) {
+    font-size: fluid-font-size(90); // 9rem
+    line-height: (80/90);
+  }
+
+  @include respond-to(MIN_1920) {
+    font-size: 9rem;
+  }
+}
+
+@mixin heading-4 {
+  @include heading;
+  text-transform: uppercase;
+
+  @include respond-to(MIN_1200) {
+    font-size: fluid-font-size(60); // 6rem
+    line-height: (60/60);
+  }
+
+  @include respond-to(MIN_1920) {
+    font-size: 6rem;
+  }
+}
+
+@mixin heading-5 {
+  @include heading;
+  font-size: 3.2rem;
+  line-height: (38/32);
+  font-weight: $boldWeight;
+  letter-spacing: -0.02em;
+
+  @include respond-to(MIN_1200) {
+    font-size: fluid-font-size(60); // 6rem
+    letter-spacing: 0;
+    line-height: (60/60);
+  }
+
+  @include respond-to(MIN_1920) {
+    font-size: 6rem;
+  }
+}
+
+@mixin heading-6 {
+  @include heading;
+  font-size: 2.8rem;
+  line-height: (36/28);
+  font-weight: $boldWeight;
+  letter-spacing: 0;
+
+  @include respond-to(MIN_1200) {
+    font-size: fluid-font-size(40); // 4rem
+    line-height: (40/40);
+  }
+
+  @include respond-to(MIN_1920) {
+    font-size: 4rem;
+  }
+}
