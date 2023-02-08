@@ -1,0 +1,17 @@
+.pageTransition {
+  .layer {
+    @include size(100%, 100vh);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: zindex($zLayout, page-transition);
+  }
+
+  .firstLayer {
+    background-color: $colorWhite;
+  }
+
+  .secondLayer {
+    background-color: $colorLightBlack;
+  }
+}
