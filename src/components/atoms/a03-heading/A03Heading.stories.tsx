@@ -10,38 +10,38 @@ const Template: ComponentStory<typeof A03Heading> = (args) => (
   <A03Heading {...args} />
 );
 
-export const h1 = Template.bind({});
-h1.args = {
+export const H1 = Template.bind({});
+H1.args = {
   tag: "h1",
   text: "Heading text",
 };
 
-export const h2 = Template.bind({});
-h2.args = {
+export const H2 = Template.bind({});
+H2.args = {
   tag: "h2",
   text: "Heading text",
 };
 
-export const h3 = Template.bind({});
-h3.args = {
+export const H3 = Template.bind({});
+H3.args = {
   tag: "h3",
   text: "Heading text",
 };
 
-export const h4 = Template.bind({});
-h4.args = {
+export const H4 = Template.bind({});
+H4.args = {
   tag: "h4",
   text: "Heading text",
 };
 
-export const h5 = Template.bind({});
-h5.args = {
+export const H5 = Template.bind({});
+H5.args = {
   tag: "h5",
   text: "Heading text",
 };
 
-export const h6 = Template.bind({});
-h6.args = {
+export const H6 = Template.bind({});
+H6.args = {
   tag: "h6",
   text: "Heading text",
 };
