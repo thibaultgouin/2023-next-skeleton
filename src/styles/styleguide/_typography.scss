@@ -1,0 +1,13 @@
+@mixin heading {
+  font-family: $baseFont;
+  font-size: 60px;
+  line-height: (55/60);
+  font-weight: $extraBoldWeight;
+  letter-spacing: -0.02em;
+}
+
+@mixin t-button {
+  font-family: $baseFont;
+  font-weight: $mediumWeight;
+  font-size: 18px;
+}

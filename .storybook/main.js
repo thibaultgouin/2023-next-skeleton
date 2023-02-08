@@ -13,7 +13,8 @@ module.exports = {
             // paths are relative to root dir in this case
             return (
               `
-              @import "./src/styles/utils/variables.scss";
+              @import "./src/styles/main.scss";
+              @import "./src/styles/globals.scss";
             ` + content
             ); // content is the individual module.scss file
           },

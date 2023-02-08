@@ -1,16 +1,18 @@
 .M02Button {
+  @include t-button;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 8px 16px;
   border-radius: 16px;
-  color: $colorLightBlack;
+  color: $colorBlack;
   background: $colorWhite;
   cursor: pointer;
   transition: background 0.3s ease;
 
   .label {
-    padding: 0 16px;
+    padding: 0 8px;
   }
 
   &:hover {
