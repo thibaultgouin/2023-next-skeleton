@@ -1,6 +1,7 @@
 html {
   font-family: $baseFont;
   font-weight: $mediumWeight;
+  font-size: 10px;
   color: $colorWhite;
   background: $colorDarkBlack;
   box-sizing: border-box;
@@ -10,6 +11,7 @@ html,
 body {
   height: 100%;
   overflow: hidden;
+  margin: 0;
 }
 
 *,

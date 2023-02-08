@@ -2,6 +2,7 @@ import Link from "next/link";
 import classNames from "clsx";
 import { IconType } from "react-icons/lib/cjs";
 import A01Icon from "../../atoms/a01-icon/A01Icon";
+import A04Text from "../../atoms/a04-text/A04Text";
 import styles from "./M02Button.module.scss";
 
 export interface M02ButtonProps {
@@ -27,7 +28,7 @@ const M02Button = ({
     return (
       <Link className={classNames(styles.M02Button, className)} href={href}>
         {iconAlignment === "start" && icon ? <A01Icon icon={icon} /> : null}
-        <span className={styles.label}>{label}</span>
+        <A04Text tag="span" className={styles.label} text={label} />
         {iconAlignment === "end" && icon ? <A01Icon icon={icon} /> : null}
       </Link>
     );
@@ -41,7 +42,7 @@ const M02Button = ({
         target={target}
       >
         {iconAlignment === "start" && icon ? <A01Icon icon={icon} /> : null}
-        <span className={styles.label}>{label}</span>
+        <A04Text tag="span" className={styles.label} text={label} />
         {iconAlignment === "end" && icon ? <A01Icon icon={icon} /> : null}
       </Tag>
     );
