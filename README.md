@@ -12,6 +12,8 @@ npm install
 npm run dev
 ```
 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
 ## Storybook
 
 See all UI components and their variations in isolation
@@ -20,7 +22,7 @@ See all UI components and their variations in isolation
 npm run storybook
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:6006](http://localhost:6006) with your browser to see the result.
 
 ## Learn More
 
