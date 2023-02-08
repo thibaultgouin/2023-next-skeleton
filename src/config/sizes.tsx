@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 export enum MediaQueries {
   MQ_480 = 480,
   MQ_768 = 768,
