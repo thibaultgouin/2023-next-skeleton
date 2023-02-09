@@ -4,7 +4,7 @@ import A04Text from "../../atoms/a04-text/A04Text";
 import styles from "./M01Link.module.scss";
 
 export interface M01LinkProps {
-  className?: string;
+  className?: string | false;
   href: string;
   text: string;
 }

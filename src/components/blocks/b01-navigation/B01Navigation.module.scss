@@ -21,6 +21,10 @@
     &:not(:first-child) {
       margin-left: 16px;
     }
+
+    .isInactive {
+      pointer-events: none;
+    }
   }
 
   // @include respond-to("MIN_768") {
