@@ -35,7 +35,7 @@ const Home: NextPage = () => {
         <div className={styles.homepage}>
           <div className={styles.container}>
             <div ref={heading}>
-              <A03Heading tag="h1" size="h3" text="Homepage content" />
+              <A03Heading tag="h1" text="Homepage content" />
             </div>
           </div>
         </div>

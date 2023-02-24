@@ -35,7 +35,7 @@ const About: NextPage = () => {
         <div className={styles.about}>
           <div className={styles.container}>
             <div ref={heading}>
-              <A03Heading tag="h1" size="h3" text="About content" />
+              <A03Heading tag="h1" text="About content" />
             </div>
           </div>
         </div>

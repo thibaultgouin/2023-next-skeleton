@@ -1,98 +1,59 @@
-@mixin heading {
-  font-family: $baseFont;
-  font-size: 6rem;
-  line-height: (55/60);
-  font-weight: $boldWeight;
-  letter-spacing: -0.02em;
-}
-
 @mixin heading-1 {
-  @include heading;
-  text-transform: uppercase;
+  font-family: $baseFontBold;
+  font-size: 5rem;
+  line-height: (54/50);
+  font-weight: $boldWeight;
 
   @include respond-to(MIN_1200) {
-    font-size: fluid-font-size(150); // 15rem
-    line-height: (130/150);
+    font-size: fluid-font-size(74); // 7.4rem
+    line-height: (86/74);
   }
 
-  @include respond-to(MIN_1920) {
-    font-size: 15rem;
+  @include respond-to(MIN_1440) {
+    font-size: 7.4rem;
   }
 }
 
 @mixin heading-2 {
-  @include heading;
-  text-transform: uppercase;
+  font-family: $baseFontBold;
+  font-size: 2rem;
+  line-height: (24/20);
+  font-weight: $boldWeight;
 
   @include respond-to(MIN_1200) {
-    font-size: fluid-font-size(140); // 14rem
-    line-height: (130/140);
+    font-size: fluid-font-size(27); // 2.7rem
+    line-height: (31/27);
   }
 
-  @include respond-to(MIN_1920) {
-    font-size: 14rem;
+  @include respond-to(MIN_1440) {
+    font-size: 2.7rem;
   }
 }
 
 @mixin heading-3 {
-  @include heading;
-  text-transform: uppercase;
+  font-family: $baseFontBold;
+  font-size: 1.5rem;
+  line-height: (18/15);
+  font-weight: $boldWeight;
 
   @include respond-to(MIN_1200) {
-    font-size: fluid-font-size(90); // 9rem
-    line-height: (80/90);
+    font-size: fluid-font-size(15); // 1.5rem
+    line-height: (18/15);
   }
 
-  @include respond-to(MIN_1920) {
-    font-size: 9rem;
+  @include respond-to(MIN_1440) {
+    font-size: 1.5rem;
   }
 }
 
 @mixin heading-4 {
-  @include heading;
-  text-transform: uppercase;
-
-  @include respond-to(MIN_1200) {
-    font-size: fluid-font-size(60); // 6rem
-    line-height: (60/60);
-  }
-
-  @include respond-to(MIN_1920) {
-    font-size: 6rem;
-  }
+  // Add heading 4 style
 }
 
 @mixin heading-5 {
-  @include heading;
-  font-size: 3.2rem;
-  line-height: (38/32);
-  font-weight: $boldWeight;
-  letter-spacing: -0.02em;
-
-  @include respond-to(MIN_1200) {
-    font-size: fluid-font-size(60); // 6rem
-    letter-spacing: 0;
-    line-height: (60/60);
-  }
-
-  @include respond-to(MIN_1920) {
-    font-size: 6rem;
-  }
+  // Add heading 5 style
 }
 
 @mixin heading-6 {
-  @include heading;
-  font-size: 2.8rem;
-  line-height: (36/28);
-  font-weight: $boldWeight;
-  letter-spacing: 0;
-
-  @include respond-to(MIN_1200) {
-    font-size: fluid-font-size(40); // 4rem
-    line-height: (40/40);
-  }
-
-  @include respond-to(MIN_1920) {
-    font-size: 4rem;
-  }
+  // Add heading 6 style
 }
